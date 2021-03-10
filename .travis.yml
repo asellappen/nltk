@@ -58,7 +58,6 @@ matrix:
 
 before_install:
   - pip install Cython
-  - pip install sklearn
   - source tools/travis/pre-install.sh # Checks Java and Python versions.
   - chmod +x tools/travis/coverage-pylint.sh
   - chmod +x tools/travis/third-party.sh
