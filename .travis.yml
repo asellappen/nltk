@@ -57,7 +57,7 @@ matrix:
       arch:  ppc64le
 
 before_install:
-  - pip install Cython
+  - sudo apt-get install gfortran libopenblas-dev liblapack-dev python-dev
   - source tools/travis/pre-install.sh # Checks Java and Python versions.
   - chmod +x tools/travis/coverage-pylint.sh
   - chmod +x tools/travis/third-party.sh
