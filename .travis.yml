@@ -1,3 +1,16 @@
+# ----------------------------------------------------------------------------
+#
+# Package             : nltk
+# Source Repo         : https://github.com/nltk/nltk
+# Travis Job Link     : https://travis-ci.com/github/asellappen/nltk/
+# Created travis.yml  : No
+# Maintainer          : Arumugam N S <asellappen@yahoo.com> / Priya Seth<sethp@us.ibm.com>
+#
+# Script License      : Apache License, Version 2 or later
+#
+# ----------------------------------------------------------------------------
+
+
 sudo: false
 
 language: python
