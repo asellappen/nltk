@@ -36,18 +36,6 @@ matrix:
     - python: '3.5'
       env: TOXENV="py-travis"
 
-    - python: '3.6'
-      env: TOXENV="py-travis"
-
-    - python: '3.7'
-      env: TOXENV="py-travis"
-
-    - python: '3.7' # Only runs checks on 3rd party for latest Python distribution
-      env: TOXENV="py-travis-third-party"
-
-    - python: '3.8'
-      env: TOXENV="py-travis"
-      
     - python: '3.5'
       env: TOXENV="py-travis"
       arch:  ppc64le
@@ -69,6 +57,8 @@ matrix:
       arch:  ppc64le
 
 before_install:
+  - pip install Cython
+  - pip install sklearn
   - source tools/travis/pre-install.sh # Checks Java and Python versions.
   - chmod +x tools/travis/coverage-pylint.sh
   - chmod +x tools/travis/third-party.sh
